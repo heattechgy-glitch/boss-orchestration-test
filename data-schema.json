@@ -1,0 +1,28 @@
+{
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string",
+      "description": "Unique identifier for each todo item."
+    },
+    "title": {
+      "type": "string",
+      "description": "The title or description of the todo item."
+    },
+    "done": {
+      "type": "boolean",
+      "description": "Status of the todo item, whether it is completed or not."
+    },
+    "priority": {
+      "type": "integer",
+      "description": "Priority level of the todo item, with higher numbers indicating higher priority."
+    },
+    "due_date": {
+      "type": "string",
+      "format": "date-time",
+      "description": "The due date and time for the todo item, represented in ISO 8601 format."
+    }
+  },
+  "required": ["id", "title", "done"],
+  "additionalProperties": false
+}
